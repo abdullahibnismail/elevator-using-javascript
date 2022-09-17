@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,15 @@
     <link rel="stylesheet" href="/elevator.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="mainContainer">
 
         <!-- Lift Section -->
         <div class="liftSection">
-                
             <!-- LIFT -->
             <div id="liftDiv" class="divBorder">
-                
+
                 <!-- LIFT DOORS -->
                 <div class="firstDoor" id="firstD">
 
@@ -25,28 +26,17 @@
                 </div>
             </div>
         </div>
-
-        <!-- FloorNumbers Section -->
-        <div class="floorNum">
-            <h1>4</h1>
-            <h1>3</h1>
-            <h1>2</h1>
-            <h1>1</h1>
-            <h1>G</h1>
-        </div>
-        <!-- button Sections -->
         <div class="buttonSection" id="buttonSection1">
-            <button class="btns" onclick="liftDoors(0)" id="openbtn" ><span>&#8612;&#8614;</span></button>
-            <button class="btns" onclick="liftDoors(49)" id="closebtn"><span>&#8614;&#8612;</span></button>
-            <button class="btns" onclick="liftMovement(400)" id="btn">4</button>
+            <button class="btns" onclick="liftDoors(0)" id="openbtn"><span>&#8612;&#8614;</span></button>
+            <button class="btns" onclick="liftDoors(43)" id="closebtn"><span>&#8614;&#8612;</span></button>
+            <button class="btns" onclick="liftMovement(420)" id="btn">4</button>
             <button class="btns" onclick="liftMovement(300)" id="btn">3</button>
             <button class="btns" onclick="liftMovement(200)" id="btn">2</button>
             <button class="btns" onclick="liftMovement(100)">1</button>
             <button class="btns" onclick="liftMovement(0)">G</button>
         </div>
     </div>
-    
-             
     <script src="/elevator.js"></script>
 </body>
+
 </html>

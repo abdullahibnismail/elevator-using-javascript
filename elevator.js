@@ -15,6 +15,7 @@ function liftDoors(c) {
   function frame1() {
     if (prfm == c) {
       clearInterval(idD);
+      setTimeout()
     }
     else {
       if (c == 0) { prfm-- }
@@ -33,7 +34,7 @@ function liftMovement(a) {
   }
   clearInterval(id);
   id = setInterval(frame, 10);
-  liftDoors(49);
+  liftDoors(43);
   function frame() {
     if (pos == a) {
       clearInterval(id);
@@ -48,7 +49,6 @@ function liftMovement(a) {
       else if (pos > a) { pos-- }
       else { pos++ }
       elem.style.bottom = pos + 'px';
-      
     }
   }
 }
