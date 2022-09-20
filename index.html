@@ -14,48 +14,43 @@
 
         <!-- Lift Section -->
         <div>
-
-        <div class="liftSection">
-            <div class="bgSection">
-                <!-- <div class="bgTop"></div>
-                <div class="bgC"></div>
-                <div class="bgC"></div>
-                <div class="bgC"></div>
-                <div class="bgBtm"></div> -->
-                    
-                <img src="./images/Header.png" class="imgnew"  />
-                <div id="floorImg"></div>
-                <!-- <img src="./images/Floor.png" class="imgnew" /> -->
-                <img src="./images/Footer.png" class="imgnew" />
-
-                
+            <div class="liftSection">
+                <!-- Building Images -->
+                <div class="bgSection">
+                    <img src="./images/Header.png" class="imgnew" />
+                    <!-- New Floor Will Be Add in this Div -->
+                    <div id="floorImg"></div>
+                    <!--  -->
+                    <img src="./images/Footer.png" class="imgnew" />
+                </div>
+                <!-- LIFT -->
+                <div id="liftDiv" class="divBorder">
+                    <!-- LIFT DOORS -->
+                    <div class="firstDoor" id="firstD"></div>
+                    <div class="secondDoor" id="secondD"></div>
+                </div>
             </div>
-            <div id="liftDiv" class="divBorder">
-                <!-- LIFT DOORS -->
-                <div class="firstDoor" id="firstD"></div>
-                <div class="secondDoor" id="secondD"></div>
-            </div>
+        </div>
+
+        <!-- Buttons Section -->
+        <div class="buttonSection" id="buttonSection1">
+            <button class="btns" onclick="liftDoors(0)" id="openbtn"><span>&#8612;&#8614;</span></button>
+            <button class="btns" onclick="liftDoors(43)" id="closebtn"><span>&#8614;&#8612;</span></button>
+            <!-- New Button Will Add Here -->
+            <div id="floorBtn"></div>
+            <!--  -->
+            <button class="btns" onclick="liftMovement(420)" id="btn">4</button>
+            <button class="btns" onclick="liftMovement(320)" id="btn">3</button>
+            <button class="btns" onclick="liftMovement(220)" id="btn">2</button>
+            <button class="btns" onclick="liftMovement(120)">1</button>
+            <button class="btns" onclick="liftMovement(0)">G</button>
+            <button onclick="onClickAddFloor()">Add</button>
         </div>
     </div>
 
-       <!-- here -->
-       <div class="buttonSection" id="buttonSection1">
-        <button class="btns" onclick="liftDoors(0)" id="openbtn"><span>&#8612;&#8614;</span></button>
-        <button class="btns" onclick="liftDoors(43)" id="closebtn"><span>&#8614;&#8612;</span></button>
-        <div id="floorBtn"></div>
-        <button class="btns" onclick="liftMovement(420)" id="btn">4</button>
-        <button class="btns" onclick="liftMovement(320)" id="btn">3</button>
-        <button class="btns" onclick="liftMovement(220)" id="btn">2</button>
-        <button class="btns" onclick="liftMovement(120)">1</button>
-        <button class="btns" onclick="liftMovement(0)">G</button>
-        <!-- <input type="text" value="" id="floorNumbers" name="floors"  min="0"  max="10" maxlength="2" size="2" class="floorNumbers"> -->
-        <button onclick="onClickAddFloor()">Add</button>
-    </div> 
-    </div>
- 
+
+    <!-- JavaScript File -->
     <script src="/elevator.js"></script>
 </body>
 
 </html>
-
-

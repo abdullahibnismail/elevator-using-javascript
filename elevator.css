@@ -1,43 +1,37 @@
-body{
+body {
     min-height: 100vh;
 }
 
-.mainContainer{
-display: flex;
-position: relative;
-justify-content: space-evenly;
-     /* min-height: 100vh; */
+.mainContainer {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
 }
-span{
+
+span {
     font-size: 30px;
 }
 
-#floorBtn{
-
+#floorBtn {
     display: flex;
     flex-direction: column-reverse;
-    /* display: contents;
-    flex-wrap: wrap-reverse; */
 }
 
 
-.buttonSection{
-    display: flex ;
+.buttonSection {
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    /* position: absolute; */
     right: 0;
-       background-color: rgba(0, 0, 0, 0.095);
-   }
-button{
-    justify-content:space-around;
-    /* box-shadow: inset 0px 0px 1px 1px #3F3D56, inset 0px -3px 4px rgba(0,0,0,0.3), inset 0px 3px 4px #3F3D56, 0px -2px 3px rgba(0,0,0,0.6), 0px 1px 2px #3F3D56, 0px 0px 1px 1px black, 0px 0px 0px 5px #3F3D56, 0px 0px 1px 6px black; */
-    font-size:23px;
+    background-color: rgba(0, 0, 0, 0.095);
+}
+
+button {
+    justify-content: space-around;
+    font-size: 23px;
     border-radius: 2%;
-    /* color:#3c3c3c; */
-    /* border:2px solid #E6E6E6; */
-    border:2px solid grey;
-    outline:none;
+    border: 2px solid grey;
+    outline: none;
     margin: 0 auto;
     height: 80px;
     width: 80px;
@@ -45,74 +39,40 @@ button{
     cursor: pointer;
     margin: 20px;
 }
-.buttonSection > button:hover {
-    border-color:grey;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.buttonSection>button:hover {
+    border-color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 300ms;
 }
-.liftSection{
-    /* display: flex; */
-    /* flex: 80% ; */
-    /* position: sticky;
-    top:0;
-    left: 0; */
+
+.liftSection {
     position: sticky;
-    top:0;
+    top: 0;
 }
-.bgSection{
+
+.bgSection {
     display: flex;
     flex-direction: column;
     height: 100%;
-    /* flex: auto; */
-    /* min-height: 100vh; */
-    /* max-width: 1250px; */
     margin: 0 auto;
-    /* background:red;
-    border: 4px solid red; */
-    /* margin: 0 auto; */
     position: relative;
     width: 100%;
-    border:3px solid red;
+    border: 3px solid red;
 }
+
 .imgnew {
-    /* background-image: url(/images/Floor.png); */
     background-size: contain;
     background-position: 2rem 0rem;
     background-repeat: no-repeat;
-    /* z-index: -1; */
-    /* position: relative; */
-    /* bottom: -0px; */
-    /* position: absolute; */
 }
-#floorImg{
+
+#floorImg {
     display: contents;
-    /* outline: none; */
-    /* display: flex; */
-    /* background-position: 2rem 0rem; */
 }
-/* .bgTop{
-    flex: 40%;
-    background-image: url(/images/Header.png);
-    background-size: contain;
-    background-position: 3rem 59px ;
-    background-repeat: no-repeat;
-}
-.bgC{
-    
-    background-image: url(/images/Floor.png);
-    background-size:contain ;
-    background-position: 2rem 0rem ;
-    background-repeat: no-repeat;
-}
-.bgBtm{
-    flex: 40%;
-    background-image: url(/images/Footer.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 3rem 0rem ;
-} */
-.divBorder{
-    margin-top:auto;
+
+.divBorder {
+    margin-top: auto;
     position: absolute;
     bottom: 10px;
     left: 45%;
@@ -124,18 +84,20 @@ button{
     background: url(/images/bg1.gif);
     background-size: cover;
 }
-.firstDoor{
+
+.firstDoor {
     float: left;
     border-radius: 7px 0 0 0;
     background-color: white;
     height: 84px;
     width: 43px;
 }
-.secondDoor{
+
+.secondDoor {
     border-radius: 0px 7px 0 0;
     float: right;
     background-color: #3F3D56;
     height: 84px;
     width: 43px;
-    
+
 }
