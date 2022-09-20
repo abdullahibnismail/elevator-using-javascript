@@ -52,3 +52,37 @@ function liftMovement(a) {
     }
   }
 }
+
+//Add New Button And Floor
+let num=4;
+var botmValue = [
+  {"id": 5, "value": 520},
+  {"id": 6, "value": 620},
+  {"id": 7, "value": 720},
+  {"id": 8, "value": 820},
+  {"id": 9, "value": 920},
+  {"id": 10, "value": 1020}
+];
+function onClickAddFloor(){
+  //Add Floor
+  const newImgTag = document.createElement("img");
+  let element1 = document.getElementById('floorImg');
+  newImgTag.src="./images/Floor.png"
+  if(num > 9){
+    element1.appendChild();
+  }
+  else{
+    element1.appendChild(newImgTag);
+  }
+  //Add Button
+  const newBtn = document.createElement("button");
+  newBtn.className="btns";
+  let flrButton = document.getElementById("floorBtn")
+  num=num+1;
+  var result = botmValue.find(item => item.id === num);
+  let flrvalue = result.value;
+  newBtn.innerHTML= num;
+  newBtn.setAttribute("onclick",`liftMovement(${flrvalue})` )
+  flrButton.appendChild(newBtn)
+}
+
